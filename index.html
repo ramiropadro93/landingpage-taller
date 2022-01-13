@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/image1.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
-    <title>Davinci Taller</title>
+    <title>Taller Davinci</title>
 </head>
 <body>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./images/image1.jpg" class="d-block w-100 carousel-image">
@@ -20,19 +21,19 @@
                 <img src="./images/image2.jpg" class="d-block w-100 carousel-image">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
     </div>
     <div class="logo-image">
         <a href="https://www.instagram.com/davincitaller/">
             <img src="./images/image1.jpg" class="logo" >
-        </a> 
+        </a>
     </div>
     <br/>
     <div class="cuerpo">
@@ -40,40 +41,43 @@
         <p>Somos una empresa dedicada a la reparación de vehiculos (tanto como para particulares <br/>y compañía de seguro) que requieren atención personalizada, garantía y confianza.</p>
     </div>
     <div class="banda-gris">
-        <div class="mision">
+        <div class="banda-gris-contained">
             <div class="row">
                 <div class="col-4">
-                    <h3>mision</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
-                        like Aldus PageMaker including versions of Lorem Ipsum.
+                    <div class="mision">
+                        <p class="item-number">1</p>
+                        <h3 class="item-header">Misión</h3>
+                        <p class="item-text">
+                            Somos un taller de reparación de chapa y pintura de vehiculos de media y alta gama. Logramos resultados de excelente calidad
+                            gracias al uso de los mejores productos con la mayor calidad y tecnología de pintado al nivel de las más grandes automotrices.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <p class="item-number">2</p>
+                    <h3 class="item-header">Visión</h3>
+                    <p class="item-text">
+                        Aspiramos a mantenernos siendo referentes en el mercado de la Ciudad de Córdoba por la calidad de nuestros trabajos y atención a
+                        nuestros clientes.
                     </p>
                 </div>
                 <div class="col-4">
-                    <h3>vision</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
-                        like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                </div>
-                <div class="col-4">
-                    <h3>valores</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
-                        like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
+                    <p class="item-number">3</p>
+                    <h3 class="item-header">Valores</h3>
+                    <ul class="item-text">
+                        <li>
+                            Compromiso
+                        </li>
+                        <li>
+                            Servicio al cliente
+                        </li>
+                        <li>
+                            Puntualidad de entrega
+                        </li>
+                        <li>
+                            Orden
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -82,6 +86,9 @@
         <h1 class="header-footer">Te esperamos</h1>
     </div>
 
+    <div class="ubicacion">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.8614004313354!2d-64.1658377844733!3d-31.390384981412808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329816e94790d9%3A0xf0a4dd077e21308d!2sAvenida%20Leandro%20N.%20Alem%201119%2C%20X5001HYJ%20C%C3%B3rdoba!5e0!3m2!1sen!2sar!4v1642046237004!5m2!1sen!2sar" width="600" height="450" style="border:0;" ></iframe>
+    </div>
     <div class="ribbon-footer">
         <p>Av. Alem 1119, Ciudad de Córdoba, Argentina</p>
     </div>

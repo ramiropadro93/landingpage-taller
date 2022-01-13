@@ -4,12 +4,19 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .carousel-image {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 500px;
+}
+
+.carousel::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    border: 4px #3b78eb solid;
 }
 
 .logo {
@@ -18,7 +25,7 @@ html,body
     float: left;
     margin-left: 50px;
     transform: translateY(-40%);
-    box-shadow: 7px 5px 26px 14px rgba(33,106,241,0.49);
+    box-shadow: 7px 5px 26px 14px #3b78eb7d;
     margin-right: 50px;
 }
 
@@ -28,6 +35,7 @@ html,body
     font-weight: bold;
     margin-top: -50px;
     margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .cuerpo {
@@ -39,44 +47,84 @@ html,body
     content: '';
 }
 
-.mision {
+.banda-gris-contained {
     margin-left: 75px;
 }
 
 .banda-gris {
     margin-top: 50px;
-    background: #cfcfcf;
+    background: #dadada;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.mision {
+    margin-left: 10%;
+}
+
+.item-header {
+    display: inline;
+    margin-left: 1%;
+}
+
+.item-number {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    margin: 1px 3px 0px 0px;
+}
+
+.item-number::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    border: 5px #000000 solid;
+    border-radius: 10%;
+    transform: translate(85%, 15%) ;
+}
+
+.item-number::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    border-left: 5px #000000 solid;
+    border-bottom: 5px #000000 solid;
+    border-radius: 10%;
+    transform: translate(-100%, 35%) ;
+}
+
+.item-text {
+    font-size: 20px;
+    margin-left: 5%;
 }
 
 .header-footer {
     font-size: 50px;
+    margin-left: 75px;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 50px;
+    letter-spacing: 4px;
 }
 
 .ribbon-footer {
-    background: #216af1;
+    background: #3b78eb;
     color: #ffffff;
-    height: 40px;
+    height: 4%;
     margin-bottom: 15px;
-    float: initial;
     width: 90%;
 }
 
-.ribbon-footer::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-left: 5px #ffffff solid;
-    border-bottom: 5px #ffffff solid;
-    background: #ffffff;
-    left: 88%;
-    top: 94.35%;
-    transform: translate(0, -50%) rotate(45deg);
+.ribbon-footer p {
+    margin-left: 150px;
 }
 
-.ribbon-footer p {
-    margin-left: 75px;
+.ubicacion {
+    margin-left: 150px;
+    margin-bottom: 50px;
 }
