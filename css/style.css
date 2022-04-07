@@ -7,6 +7,130 @@ html,body
     overflow-x: hidden;
 }
 
+.carousel::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    border: 4px #3b78eb solid;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 1rem;
+    transform: translateY(-40%);
+    box-shadow: 7px 5px 26px 14px #3b78eb;
+    margin-right: 50px;
+}
+
+.titulo {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subtitulo {
+    font-size: 16px;
+}
+
+.cuerpo {
+    margin-left: 75px;
+    margin-top: 50px;
+}
+
+.banda-gris-contained {
+    margin-left: 1rem;
+}
+
+.banda-gris {
+    margin-top: 50px;
+    background: #dadada;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.mision {
+    margin-left: 5%;
+}
+
+.item-header {
+    display: inline;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.item-number {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    margin: 1px 3px 0px 0px;
+}
+
+.item-number::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    border: 5px #000000 solid;
+    border-radius: 10%;
+    transform: translate(85%, 15%) ;
+}
+
+.item-text {
+    font-size: 11px;
+    margin-left: 5%;
+}
+
+.cuerpo-footer {
+    margin-left: 1rem;
+    margin-top: 50px;
+}
+
+.header-footer {
+    font-size: 40px;
+    margin-left: 5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 50px;
+    letter-spacing: 4px;
+}
+
+.ribbon-footer {
+    background: #3b78eb;
+    color: #ffffff;
+    height: 4%;
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.ribbon-footer a {
+    margin-left: 4rem;
+    color: #ffffff;
+}
+
+.ribbon-footer a:hover {
+    color: #b9b9b9;
+}
+
+.ubicacion {
+    margin-left: 150px;
+    margin-bottom: 50px;
+    display: inline;
+}
+
+.img-seguro {
+    width: 4rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin-bottom: 2rem;
+}
+
 .float-wp{
 	position: fixed;
 	width: 60px;
@@ -49,37 +173,69 @@ html,body
 }
 
 .ubicacion { 
-    visibility: hidden;
+    display: none;
 }
 
 .header-footer {
-    font-size: 20px;
-    margin-left: 75px;
+    font-size: 30px;
+    margin-left: 50px;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 50px;
     letter-spacing: 4px;
 }
 
+.ribbon-footer {
+    padding-bottom: 25px;
+}
+
 .ribbon-footer a {
     margin-left: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-    .img-seguro {
-        width: 3.5rem;
-        margin-left: 0.25rem;
-        margin-right: 0.25rem;
-        margin-bottom: 2rem;
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .carousel-inner {
+        width: 100%;
+    }
+    
+    .carousel-image {
+        width: 100%;
+        height: 300px;
     }
 
-    .ubicacion { 
-        visibility: hidden;
+    .logo {
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin-left: 1rem;
+        transform: translateY(-40%);
+        box-shadow: 7px 5px 26px 14px #3b78eb;
+        margin-right: 50px;
     }
 
-    .ubicacion-alter {
-        visibility: visible;
+    .titulo {
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: -50px;
+        margin-bottom: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+    
+    .subtitulo {
+        font-size: 15px;
+    }
+
+    .item-header {
+        display: inline;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .item-text {
+        font-size: 13px;
+        margin-left: 5%;
+    }    
     
     .header-footer {
         font-size: 50px;
@@ -93,16 +249,72 @@ html,body
     .ribbon-footer a {
         margin-left: 2rem;
     }
-}
 
-@media screen and (max-width: 1024px) {
     .img-seguro {
-        width: 3rem;
+        width: 3.5rem;
         margin-left: 0.25rem;
         margin-right: 0.25rem;
         margin-bottom: 2rem;
     }
-    
+
+    .header-footer {
+        font-size: 30px;
+        margin-left: 50px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 50px;
+        letter-spacing: 4px;
+    }
+
+    .ubicacion { 
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .carousel-inner {
+        width: 100%;
+    }
+
+    .carousel-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .logo {
+        width: 250px;
+        height: 250px;
+        float: left;
+        margin-left: 1rem;
+        transform: translateY(-40%);
+        box-shadow: 7px 5px 26px 14px #3b78eb;
+        margin-right: 50px;
+    }
+
+    .titulo {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: -50px;
+        margin-bottom: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .subtitulo {
+        font-size: 17px;
+    }
+
+    .item-header {
+        display: inline;
+        margin-left: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .item-text {
+        font-size: 15px;
+        margin-left: 5%;
+    }
+
     .header-footer {
         font-size: 50px;
         margin-left: 75px;
@@ -112,74 +324,227 @@ html,body
         letter-spacing: 4px;
     }
 
+    .ubicacion {
+        display: inline;
+    }
+    
+    .ribbon-footer {
+        margin-top: 50px;
+        padding-bottom: 35px;
+    }
+    
     .ribbon-footer a {
         margin-left: 4rem;
+        font-size: 20px;
+    }
+
+    .img-seguro {
+        width: 3rem;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        margin-bottom: 2rem;
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .carousel-inner {
+        width: 100%;
+    }
+
     .carousel-image {
         width: 100%;
         height: 500px;
     }
-    
-    .carousel::after {
-        content: '';
-        width: 100%;
-        position: absolute;
-        border: 4px #3b78eb solid;
-    }
-    
+
     .logo {
         width: 250px;
         height: 250px;
         float: left;
-        margin-left: 50px;
+        margin-left: 1rem;
+        transform: translateY(-40%);
+        box-shadow: 7px 5px 26px 14px #3b78eb;
+        margin-right: 50px;
+        margin-bottom: 2rem;
+    }
+
+    .titulo {
+        font-size: 65px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: -50px;
+        margin-bottom: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .subtitulo {
+        font-size: 25px;
+    }
+
+    .item-header {
+        display: inline;
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+
+    .item-text {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    .header-footer {
+        font-size: 50px;
+        margin-left: 75px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 50px;
+        letter-spacing: 4px;
+    }
+
+    .ubicacion {
+        display: inline;
+    }
+
+    .ribbon-footer {
+        margin-top: 50px;
+        padding-bottom: 35px;
+    }
+    
+    .ribbon-footer a {
+        margin-left: 4rem;
+        font-size: 20px;
+    }
+
+    .img-seguro {
+        width: 4rem;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 2500px) {
+    .carousel-inner {
+        width: 100%;
+    }
+
+    .carousel-image {
+        width: 100%;
+        height: 700px;
+    }
+
+    .logo {
+        width: 300px;
+        height: 300px;
+        float: left;
+        margin-left: 1rem;
         transform: translateY(-40%);
         box-shadow: 7px 5px 26px 14px #3b78eb;
         margin-right: 50px;
     }
-    
-    .header1 {
-        font-size: 50px;
+
+    .titulo {
+        font-size: 70px;
         text-transform: uppercase;
         font-weight: bold;
         margin-top: -50px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    
-    .cuerpo {
-        margin-left: 75px;
-        margin-top: 50px;
+
+    .subtitulo {
+        font-size: 30px;
     }
-    
-    .cuerpo::before {
-        content: '';
-    }
-    
-    .banda-gris-contained {
-        margin-left: 75px;
-    }
-    
-    .banda-gris {
-        margin-top: 50px;
-        background: #dadada;
-        padding-top: 2%;
-        padding-bottom: 5%;
-    }
-    
-    .mision {
-        margin-left: 10%;
-    }
-    
+
     .item-header {
         display: inline;
         margin-left: 1rem;
+        font-size: 3rem;
+    }
+
+    .item-text {
+        font-size: 25px;
+        margin-left: 5%;
+    }
+
+    .header-footer {
+        font-size: 60px;
+        margin-left: 75px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 50px;
+        letter-spacing: 4px;
+    }
+
+    .ubicacion {
+        display: inline;
+    }
+
+    .ribbon-footer {
+        margin-top: 50px;
+        padding-bottom: 35px;
     }
     
+    .ribbon-footer a {
+        margin-left: 4rem;
+        font-size: 20px;
+    }
+
+    .img-seguro {
+        width: 5rem;
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 2501px) {
+    .carousel-inner {
+        width: 100%;
+    }
+
+    .carousel-image {
+        width: 100%;
+        height: 1000px;
+    }
+
+    .logo {
+        width: 500px;
+        height: 500px;
+        float: left;
+        margin-left: 1rem;
+        transform: translateY(-40%);
+        box-shadow: 7px 5px 26px 14px #3b78eb;
+        margin-right: 50px;
+        margin-bottom: 5rem;
+    }
+
+    .titulo {
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: -50px;
+        margin-bottom: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .subtitulo {
+        font-size: 40px;
+        margin-bottom: 5rem;
+    }
+
+    .item-header {
+        display: inline;
+        margin-left: 1rem;
+        font-size: 5rem;
+    }
+
+    .item-text {
+        font-size: 40px;
+        margin-left: 5%;
+    }
+
     .item-number {
-        font-size: 50px;
+        font-size: 70px;
         font-family: sans-serif;
         font-weight: bold;
         display: inline;
@@ -189,53 +554,44 @@ html,body
     .item-number::before {
         content: "";
         display: inline-block;
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         margin-right: 5px;
         border: 5px #000000 solid;
         border-radius: 10%;
         transform: translate(85%, 15%) ;
     }
-    
-    .item-text {
-        font-size: 20px;
-        margin-left: 5%;
-    }
-    
+
     .header-footer {
-        font-size: 50px;
+        font-size: 100px;
         margin-left: 75px;
         text-transform: uppercase;
         font-weight: bold;
         margin-bottom: 50px;
         letter-spacing: 4px;
     }
-    
+
+    .ubicacion {
+        display: inline;
+    }
+
+    .ubicacion-iframe {
+        width: 1000px;
+        height: 1000px;
+    }
+
     .ribbon-footer {
-        background: #3b78eb;
-        color: #ffffff;
-        height: 4%;
-        margin-bottom: 15px;
-        width: 90%;
+        margin-top: 50px;
+        padding-bottom: 35px;
     }
     
     .ribbon-footer a {
         margin-left: 4rem;
-        color: #ffffff;
-    }
-
-    .ribbon-footer a:hover {
-        color: #b9b9b9;
-    }
-    
-    .ubicacion {
-        margin-left: 150px;
-        margin-bottom: 50px;
-        display: inline;
+        font-size: 50px;
     }
 
     .img-seguro {
-        width: 4rem;
+        width: 10rem;
         margin-left: 0.25rem;
         margin-right: 0.25rem;
         margin-bottom: 2rem;
